@@ -1,8 +1,5 @@
-import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import BigNumber from 'bignumber.js'
-import { pdf as reactPdf } from '@react-pdf/renderer'
-import InvoicePdf from './InvoicePdf'
 import { USERBASE_DATABASE_NAME, DEFAULT_CURRENCY } from '../../config'
 import {
   addDaysToDate,
@@ -234,7 +231,10 @@ export const emailInvoiceLink = (invoice) => {
 }
 
 export const downloadInvoicePdf = async (invoice) => {
-  const pdfObject = reactPdf(<InvoicePdf invoice={invoice} />)
+  // lazy load InvoicePdf because @react-pdf is very large
+  const InvoicePdf = (await import('./InvoicePdf')).default
+
+  const pdfObject = InvoicePdf({ invoice })
   const pdfBlob = await pdfObject.toBlob()
 
   const { payor, dateIssued } = invoice

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Document, Page, Text, View } from '@react-pdf/renderer'
+import { Document, Page, Text, View, pdf } from '@react-pdf/renderer'
 import {
   isValidDate,
   numberToNumberString,
@@ -67,7 +67,7 @@ const InvoicePdf = (props) => {
     ? numberToNumberString(Number(shipping))
     : numberToNumberString(0)
 
-  return (
+  return pdf(
     <Document subject={JSON.stringify(invoice)}>
       <Page size="A4">
         <View

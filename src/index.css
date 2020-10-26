@@ -1,0 +1,415 @@
+/* 
+  Source: https://tribby.com/fonts/barlow/
+*/
+@font-face {
+  font-family: "Barlow";
+  src: url('./themes/fonts/Barlow/Barlow-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Barlow Medium";
+  src: url('./themes/fonts/Barlow/Barlow-Medium.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0EAD6;
+  height: 100%;
+  overflow: auto;
+}
+
+select {
+  font-family: "Barlow";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+h1 { font-size: 3.5em; }
+h3 { font-size: 1.6em; }
+
+@media only screen and (max-width: 420px) {
+  h1 { font-size: 2.5em; }
+  h3 { font-size: 1.2em; }
+}
+
+a {
+  color: black;
+}
+
+a:hover, .link:hover {
+  color: #66bbae;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+input, button, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none !important;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1.5px;
+  padding: 10px;
+  font-size: large;
+  margin: 0;
+}
+
+input[type='password'] {
+  letter-spacing: 2px;
+}
+
+input[type='password']::placeholder {
+  letter-spacing: normal;
+}
+
+.input-padding { padding: 10px }
+.pr-0 { padding-right: 0 }
+.pt-0 { padding-top: 0 }
+.pb-0 { padding-bottom: 0 }
+
+.input-no-style {
+  all: unset;
+}
+
+.text-input {
+  font-family: "Barlow";
+  box-shadow: none;
+  border-color: #d3d3d3;
+  background-color: #f9f6f6;
+}
+
+.text-input:hover {
+  border-color: #a9a9a9;
+}
+
+.text-input:focus {
+  border-color: #87c6c3;
+  box-shadow: 0 0 3px #C3EEE7;
+}
+
+.validity:invalid, .invalid {
+  border-color: red !important;
+}
+
+.button {
+  font-family: "Barlow Medium";  
+  padding-top: 8px;
+  background-color: #c6c386;
+  color: #32363c;
+  border-color: #32363c;
+  box-shadow: inset 0 2px 0 0 rgba(255,255,255,0.4);
+}
+
+.button:hover:enabled {
+  cursor: pointer;
+}
+
+.button:hover:enabled,
+.button:active,
+.button:visited,
+.button:focus {
+  color: #C3EEE7;
+  background: 
+    linear-gradient(#32363c,#32363c) padding-box,
+    linear-gradient(#c6c386, #87c6c3) border-box;
+  border-color: transparent;
+  box-shadow: unset;
+}
+
+.button:active,
+.button:visited,
+.button:focus {
+  color: #c6c386;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
+
+.button-inverted {
+  font-family: "Barlow Medium";  
+  padding-top: 8px;
+  color: #c6c386;
+  background: 
+    linear-gradient(#32363c,#32363c) padding-box,
+    linear-gradient(#c6c386, #87c6c3) border-box;
+  border-color: transparent;
+  box-shadow: inset 0 2px 0 0 rgba(255,255,255,0.4);
+}
+
+.button-inverted:hover:enabled {
+  cursor: pointer;
+}
+
+.left-button-with-icon {
+  width: 160px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
+}
+
+.right-button-with-icon {
+  width: 40px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.button-icon>img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.nav-button {
+  /* width: 200px; */
+  height: 36px;
+}
+
+.container {
+  background: 
+    linear-gradient(#FFFCF2,#FFFCF2) padding-box,
+    linear-gradient(#c6c386, #87c6c3) border-box;    
+  border: 3.5px solid transparent;  
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px #00000040;
+  text-align: center;
+  padding: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {
+    padding: 1em;
+    border-width: 2px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: unset;
+  }
+  
+  body {
+    background: #FFFCF2;
+  }
+
+  .text-input {
+    background-color: white;
+  }
+}
+
+.circle-border {
+  color: #C3EEE7;
+  background: 
+    linear-gradient(#32363c,#32363c) padding-box,
+    linear-gradient(#c6c386, #87c6c3) border-box;    
+  border: 2.5px solid transparent;  
+  box-shadow: 3px 3px 6px #00000040;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.error { color: red; }
+.dangerous-hover:hover { color: red }
+
+/* https://stackoverflow.com/a/53564014 */
+.loader {
+  position: relative;
+  height: .15rem;
+  background: #87c6c3;
+  animation: progress 1.5s infinite ease-in-out;
+}
+
+@keyframes progress {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+    width: 0;
+    background: #c6c386;
+  }
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed {
+  /* position: sticky; not playing nicely with child dropdown with position absolute */
+  position: fixed;
+  z-index: 100;
+}
+
+.max-screen-width {
+  max-width: 65em;
+}
+
+/* https://css-tricks.com/snippets/css/css-triangle/ */
+.triangle-down {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #c3eee7;
+}
+
+.paper-container {
+  width: 750px;  
+  min-height: 1000px;
+  background: #FFFCF2;
+  box-shadow: 0 3px 6px 0 grey;
+  margin: auto;
+}
+
+.inner-paper-container {
+  padding: 75px;
+}
+
+.double-border {
+  border-bottom: 4px double black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* https://stackoverflow.com/questions/37926864/hide-text-but-have-it-show-up-if-copied-and-pasted-without-javascript */
+.hidden-but-copy-pastable-text {
+  color: transparent;
+  font-size: 0;
+}
+
+.dotted-border-bottom {
+  border-bottom: 1px dotted;
+}
+
+.dashboard-with-table {
+  padding-top: 80px;
+  margin: auto;
+}
+
+.dashboard-with-table>div {
+  width: 75%;
+  margin: auto;
+}
+
+.dashboard-with-table-total {
+  font-size: large;
+}
+
+.dashboard-with-table-outer-container {
+  padding-top: 25px;
+}
+
+.dashboard-with-table .container {
+  min-height: 60vh;
+  padding: 1em;
+  margin-bottom: 4em;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th {
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.dashboard-table td {
+  padding-bottom: .8em;
+  padding-top: .8em;
+  text-align: left;
+}
+
+.dashboard-table tr {
+  border-bottom: 1px solid lightgrey;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #d8fff89e;
+}
+
+.dashboard-table th:first-child,
+.dashboard-table td:first-child {
+  padding-left: 1em;
+}
+
+.dashboard-table th:last-child,
+.dashboard-table td:last-child {
+  padding-right: 1em;
+}
+
+.dashboard-table thead tr {
+  border-bottom: 1px solid black;
+}
+
+.create-invoice-to-get-started {
+  margin-top: 18%;
+  padding-bottom: 18%;
+}
+
+.dangerous {
+  color: red;
+}
+
+.float-right { float: right; }
+.float-left { float: left; }

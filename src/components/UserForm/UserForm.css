@@ -1,0 +1,97 @@
+.UserFormTitle {  
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10%;
+  margin-left: 14%;
+  margin-right: 4%;
+  width: 32%;
+}
+
+.OuterUserForm {
+  display: inline-block;
+  margin-bottom: 3rem;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 17%;
+  width: 28%;
+}
+
+.UserForm {
+  margin: auto;
+  margin-top: 4%;
+  max-width: 390px;  
+}
+
+.UserFormPasswordWarning {
+  padding: 1.2em;
+  border: 1px solid #66bbae;
+  background-color: #c3eee79e;
+  border-radius: 1px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .UserFormTitle {
+    margin-left: 28%;
+    margin-right: 0;
+    width: 22%;
+  }
+
+  .OuterUserForm {
+    margin-left: 0;
+    margin-right: 16%;
+    width: 34%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .OuterUserForm {
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .UserFormTitle {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  .OuterUserForm {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  .UserForm {
+    margin: unset;
+    max-width: unset;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .UserForm {
+    min-width: 330px;  
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .UserFormTitle {
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+  }
+
+  .OuterUserForm {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+  }
+
+  .UserForm {
+    margin: unset;
+    max-width: unset;
+  }
+}

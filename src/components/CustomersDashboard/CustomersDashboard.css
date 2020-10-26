@@ -1,0 +1,52 @@
+.dashboard-table td.customer-dashboard-received.received {
+  color: #0ADA5D;
+  font-weight: bold;
+}
+
+.customer-dashboard-owes-prefix {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .customer-dashboard-owes-prefix {
+    display: initial;
+  }
+
+  #customer-dashboard tbody td {
+    padding-bottom: .8rem;
+  }
+
+  #customer-dashboard tbody tr {
+    display: grid;
+    grid-template-areas: 
+      'top-left         top-right'
+      'bottom-left   bottom-right'
+    ;
+    grid-template-columns: 60% 40%;
+  }
+
+  .customer-dashboard-customer {
+    grid-area: top-left;
+    padding-bottom: 0 !important;
+  }
+
+  .customer-dashboard-email {
+    grid-area: bottom-left;
+    padding-left: 1rem;
+    font-size: .8em;
+    color: grey;
+  }
+
+  .customer-dashboard-owes {
+    grid-area: bottom-right;
+    padding-right: 1rem;
+    font-size: .8em;
+    color: grey;
+    text-align: right !important;
+  }
+
+  .customer-dashboard-received {
+    grid-area: top-right;
+    padding-bottom: 0 !important;
+  }
+}

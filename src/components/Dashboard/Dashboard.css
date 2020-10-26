@@ -1,0 +1,159 @@
+#dashboard {
+  padding-top: 90px;
+  margin-bottom: 30px;
+}
+
+#dashboard .dashboard-outer-container {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 2%;
+}
+
+#dashboard .container {
+  height: 210px;
+  width: 360px;
+  padding: 1.8em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+#dashboard .left-container {
+  float: right;
+  margin-right: 4%;
+}
+
+#dashboard .right-container {
+  float: left;
+  margin-left: 4%;  
+}
+
+#sales-by-customer,
+#sales-by-product {
+  padding-left: .5em !important;
+  width: calc(360px + 1.3em) !important;
+}
+
+#dashboard .create-invoice-to-get-started {
+  margin-top: 80px;
+  font-size: .9em;
+}
+
+.chart-header {
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+#dashboard-total-row {
+  height: 20%;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid lightgray;
+  font-weight: bold;
+}
+
+#dashboard-total-row-value,
+#dashboard-customers-row-value {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  float: right;
+}
+
+#dashboard-total-row-header,
+#dashboard-customers-row-header {
+  margin-top: .8em;
+  float: left;
+}
+
+#dashboard-customers-row {
+  height: 20%;
+  margin-bottom: 2%;
+  padding-top: 2%;
+  border-top: 1px solid lightgray;
+  font-weight: bold;
+}
+
+#dashboard-invoice-values-grid {
+  height: 60%;
+  display: grid;
+  grid-template-areas: 'left center right';
+}
+
+#dashboard-invoice-values-grid>div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#dashboard-received-value { 
+  grid-area: left;
+  text-align: left;
+}
+
+#dashboard-owed-value { 
+  grid-area: center;
+}
+
+#dashboard-overdue-value { 
+  grid-area: right;
+  text-align: right;
+}
+
+.dashboard-invoice-values-header {
+  font-size: .8em;
+  padding-bottom: .2em;
+}
+
+.dashboard-invoice-values-value {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#dashboard-received-value .dashboard-invoice-values-value {
+  color: #0ADA5D;
+}
+
+#dashboard-owed-value .dashboard-invoice-values-value {
+  font-weight: normal;
+}
+
+#dashboard-overdue-value .dashboard-invoice-values-value {
+  color: #B5A51A;
+}
+
+@media screen and (max-width: 768px) {
+  #dashboard {
+    padding-top: 100px;
+  }
+  
+  #dashboard .dashboard-outer-container {
+    width: 80%;    
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  #dashboard .container {
+    height: 260px;
+    width: unset !important;
+  }
+  
+  #dashboard .left-container {
+    float: unset;
+    margin-right: 0;
+  }
+  
+  #dashboard .right-container {
+    float: unset;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dashboard-invoice-values-value {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  #dashboard-customers-row {
+    padding-top: 4%;
+  }
+}

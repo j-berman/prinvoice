@@ -1,0 +1,60 @@
+{
+  "name": "prinvoice",
+  "version": "0.0.1",
+  "homepage": ".",
+  "description": "End-to-end encrypted invoice creation and tracking.",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-regular-svg-icons": "^5.15.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@react-pdf/renderer": "^1.6.11",
+    "bignumber.js": "^9.0.1",
+    "chart.js": "^2.9.3",
+    "file-saver": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.10.0",
+    "react-dom": "^16.13.1",
+    "uuid": "^8.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "no-console": "off",
+      "semi": [
+        2,
+        "never"
+      ],
+      "no-trailing-spaces": 2,
+      "react/jsx-indent": [
+        2,
+        2,
+        {
+          "indentLogicalExpressions": true
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^3.4.3"
+  }
+}

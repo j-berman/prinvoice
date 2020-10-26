@@ -1,0 +1,76 @@
+#account-page {
+  padding-top: 100px;
+  margin-bottom: 4rem;
+}
+
+#account-page label {
+  color: #66bbae;
+  font-weight: bold;
+  font-size: .85em;
+}
+
+#account-page .container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.account-page-section {
+  margin-bottom: 3em;
+}
+
+.account-page-header-section {
+  text-align: left;
+}
+
+.account-page-header {
+  font-size: large;
+  font-weight: bold;
+}
+
+.account-page-header-line {
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid rgb(162, 162, 162);
+}
+
+.account-page-form-input-section {
+  width: 65%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.account-page-form-input-section .text-input {
+  margin-top: 8px;
+}
+
+#account-page-currency-selector {
+  margin-top: 8px;
+  display: block;
+  height: 40px;
+  min-width: 80px;
+  outline: none !important;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1.5px;
+  padding-left: 10px;
+}
+
+.account-page-section .button {
+  width: 65%;
+  margin-top: 1em;
+}
+
+#delete-account-button {
+  margin-top: 2em;
+}
+
+#delete-account-button:hover {
+  color: red;
+}
+
+#account-page .error {
+  margin-top: 1em;
+}
+

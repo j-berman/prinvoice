@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://prinvoice.com"><img src="./images/logo.svg" height="100" alt="Prinvoice"></a>
+  <a href="https://prinvoice.com"><img src="./images/logo.svg" height="150" alt="Prinvoice"></a>
 </p>
 
 <p align="center">
@@ -8,14 +8,13 @@
 
 ## What is Prinvoice?
 
-[Prinvoice](https://prinvoice.com) is a simple way to create and track invoices.
+[Prinvoice](https://prinvoice.com) is a simple way to create and track invoices. You — and only you — have access to your own invoices.
 
-All invoices are encrypted locally using your password, before being sent to the server for storage (thanks to [Userbase](https://github.com/smallbets/userbase)).
-
-You — and only you — have access to your own invoices.
+Invoices are encrypted locally using your password, before being sent to the server for storage (thanks to [Userbase](https://github.com/smallbets/userbase)).
 
 ## Screenshots
 
+### Creating an invoice
 <p align="center">
   <a href="https://prinvoice.com"><img src="./images/NewInvoiceDemo.gif" alt="Prinvoice"></a>
 </p>
@@ -24,6 +23,7 @@ You — and only you — have access to your own invoices.
   <img src="./images/NewInvoiceDesktop.png" alt="Prinvoice">
 </p>
 
+### The dashboard
 <p align="center">
   <img src="./images/DashboardDesktop.png" alt="Prinvoice">
 </p>
@@ -32,7 +32,7 @@ You — and only you — have access to your own invoices.
   <img src="./images/InvoicesDesktop.png" alt="Prinvoice">
 </p>
 
-
+### Mobile
 <p align="center">
   <img src="./images/NewInvoiceMobile1.jpg" width="200" alt="Prinvoice">
   <img src="./images/NewInvoiceMobile2.jpg" width="200" alt="Prinvoice">

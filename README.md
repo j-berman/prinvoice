@@ -44,6 +44,10 @@ You — and only you — have access to your own invoices.
   <img src="./images/InvoicesMobile.jpg" width="200" alt="Prinvoice">
 </p>
 
+## Download and run the app locally
+
+Download the latest [release](https://github.com/j-berman/prinvoice/releases) (`prinvoice_x.x.x.zip` or `prinvoice_x.x.x.tar.gz`), then click and drag the `index.html` file into your browser's address bar.
+
 ## License
 
 This project is released under the [MIT License](LICENSE).
